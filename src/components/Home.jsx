@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 
-const Main = () => {
+const Home = () => {
     return (
         <main className="mainSection">
             Main
@@ -8,4 +8,4 @@ const Main = () => {
     );
 };
 
-export default Main;
+export default Home;

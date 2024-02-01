@@ -2,7 +2,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-bootstrap";
 import Header from './components/common/Header'
-import Main from './components/Main'
+import Home from './components/Home'
 import Footer from './components/common/Footer'
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
   return (
   <>
     <Header></Header>
-    <Main></Main>
+    <Home></Home>
     <Footer></Footer>
   </>
     
