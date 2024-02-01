@@ -1,25 +1,26 @@
 import "./Footer.css";
 import logoFooter from "../../assets/Logo Light.png";
+import { EnvelopeFill, Github, Linkedin } from "react-bootstrap-icons";
 
 const Footer = () => {
     return (
         <footer className="container-fluid pt-3">
             <section className="row">
-                <aside className="col-md-6 ps-lg-5 col-xs-12 fw-bold fs-4 d-flex align-items-center">
-                    <a href={"/"}>
+                <aside className="col-sm-6 ps-sm-5 fw-semibold fs-4">
+                    <a href={"/"} className="d-flex align-items-center justify-content-center justify-content-sm-start mb-sm-0 mb-4">
                         <img src={logoFooter} id="logoFooter" alt="logoFooter"></img>
                         <span className="ms-2">Nico Powell</span>
                     </a>
                 </aside>
-                <aside className="col-md-6 text-md-end col-xs-12">
+                <aside className="col-sm-6 text-sm-end d-flex ad-flex align-items-center justify-content-center justify-content-sm-end gap-3 pe-sm-5">
                     <a href={"/"}>
-                        <img src={logoFooter} id="logoFooter" alt="logoFooter"></img>
+                        <Linkedin size={50}></Linkedin>
                     </a>
                     <a href={"/"}>
-                        <img src={logoFooter} id="logoFooter" alt="logoFooter"></img>
+                        <Github size={50}></Github>
                     </a>
                     <a href={"/"}>
-                        <img src={logoFooter} id="logoFooter" alt="logoFooter"></img>
+                        <EnvelopeFill size={50}></EnvelopeFill>
                     </a>
                 </aside>
             </section>
