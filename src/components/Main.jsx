@@ -2,9 +2,9 @@ import { Container } from "react-bootstrap";
 
 const Main = () => {
     return (
-        <Container  className="mainSection">
+        <main className="mainSection">
             Main
-        </Container>
+        </main>
     );
 };
 
