@@ -1,0 +1,17 @@
+a{
+    color: white;
+    text-decoration: none;
+}
+footer {
+    background-color: #22223B;
+}
+
+#logoFooter {
+    height: 75px;
+}
+
+@media all and (min-height:577px) and (max-height:768px){
+    #logoFooter{
+        margin-bottom: 1.5rem;
+    }
+}
