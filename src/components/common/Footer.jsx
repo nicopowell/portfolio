@@ -1,6 +1,6 @@
 import "./Footer.css";
 import logoFooter from "../../assets/Logo Light.png";
-import { EnvelopeFill, Github, Linkedin } from "react-bootstrap-icons";
+import { Github, Instagram, Linkedin } from "react-bootstrap-icons";
 
 const Footer = () => {
     return (
@@ -13,14 +13,14 @@ const Footer = () => {
                     </a>
                 </aside>
                 <aside className="col-sm-6 text-sm-end d-flex ad-flex align-items-center justify-content-center justify-content-sm-end gap-3 pe-sm-5">
-                    <a href={"/"}>
+                    <a href={"https://www.linkedin.com/in/nicolas-powell-938a47249/"} target="blank">
                         <Linkedin size={50}></Linkedin>
                     </a>
-                    <a href={"/"}>
+                    <a href={"https://github.com/nicopowell"} target="blank">
                         <Github size={50}></Github>
                     </a>
-                    <a href={"/"}>
-                        <EnvelopeFill size={50}></EnvelopeFill>
+                    <a href={"https://www.instagram.com/nicopowell30/"} target="blank">
+                        <Instagram size={50}></Instagram>
                     </a>
                 </aside>
             </section>
