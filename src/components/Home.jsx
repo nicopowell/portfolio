@@ -6,7 +6,7 @@ import Instagram from "../assets/Instagram-Icon.avif";
 
 const Home = () => {
     return (
-        <section className="d-flex flex-column align-items-center py-5 my-4">
+        <section className="d-flex flex-column align-items-center py-5" id="home">
             <img src={Nico} alt="Nico Powell" id="nicoImage" />
             <h2 className="pt-4 fs-1">Hello! My name is</h2>
             <h1 id="name">Nicolas Powell</h1>
