@@ -15,13 +15,13 @@ const Footer = () => {
                     </a>
                 </aside>
                 <aside className="pe-sm-5 d-flex gap-3">
-                    <a href={"https://github.com/nicopowell"} target="blank" className="d-flex align-items-center">
+                    <a href={"https://github.com/nicopowell"} target="blank">
                         <img src={Github} className="mediaLogoFooter" alt="Github logo"></img>
                     </a>
-                    <a href={"https://www.linkedin.com/in/nicolas-powell-938a47249/"} target="blank" className="d-flex align-items-center">
+                    <a href={"https://www.linkedin.com/in/nicolas-powell-938a47249/"} target="blank">
                         <img src={Linkedin} className="mediaLogoFooter" alt="Linkedin Logo"></img>
                     </a>
-                    <a href={"https://www.instagram.com/nicopowell30/"} target="blank" className="d-flex align-items-center">
+                    <a href={"https://www.instagram.com/nicopowell30/"} target="blank">
                         <img src={Instagram} className="mediaLogoFooter" alt="Instagram Logo"></img>
                     </a>
                 </aside>

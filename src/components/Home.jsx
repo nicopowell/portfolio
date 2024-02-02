@@ -6,7 +6,7 @@ import Instagram from "../assets/Instagram-Icon.avif";
 
 const Home = () => {
     return (
-        <section className="d-flex flex-column align-items-center py-5">
+        <section className="d-flex flex-column align-items-center py-5 my-4">
             <img src={Nico} alt="Nico Powell" id="nicoImage" />
             <h2 className="pt-4 fs-1">Hello! My name is</h2>
             <h1 id="name">Nicolas Powell</h1>
@@ -14,27 +14,24 @@ const Home = () => {
                 A Fullstack developer who builds your website from design concept to functional
                 reality, driven by their knowledge and experience.
             </p>
-            <div>
+            <div className="d-flex gap-5 mt-5">
                 <a
                     href={"https://github.com/nicopowell"}
                     target="blank"
-                    className="d-flex align-items-center"
                 >
-                    <img src={Github} className="mediaLogoFooter" alt="Github logo"></img>
+                    <img src={Github} className="mediaLogoHome" alt="Github logo"></img>
                 </a>
                 <a
                     href={"https://www.linkedin.com/in/nicolas-powell-938a47249/"}
                     target="blank"
-                    className="d-flex align-items-center"
                 >
-                    <img src={Linkedin} className="mediaLogoFooter" alt="Linkedin Logo"></img>
+                    <img src={Linkedin} className="mediaLogoHome" alt="Linkedin Logo"></img>
                 </a>
                 <a
                     href={"https://www.instagram.com/nicopowell30/"}
                     target="blank"
-                    className="d-flex align-items-center"
                 >
-                    <img src={Instagram} className="mediaLogoFooter" alt="Instagram Logo"></img>
+                    <img src={Instagram} className="mediaLogoHome" alt="Instagram Logo"></img>
                 </a>
             </div>
         </section>
