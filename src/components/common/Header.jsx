@@ -4,7 +4,7 @@ import logo from "../../assets/Logo.png";
 
 const Header = () => {
     return (
-        <Navbar expand="lg" className="bg-body-tertiary">
+        <Navbar sticky="top" expand="lg" className="bg-body-tertiary">
             <Container fluid>
                 <Navbar.Brand href="#home" className="fw-bold fs-3 d-flex align-items-center">
                     <img
