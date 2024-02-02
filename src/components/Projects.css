@@ -1,0 +1,29 @@
+.projectCard {
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.226));
+  transition: 0.5s;
+}
+
+.projectCard:hover {
+  scale: 1.05;
+  filter: drop-shadow(5px 5px 5px #9720f965);
+}
+
+.projectImage {
+  height: 100%;
+  max-height: 330px;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.7s;
+  object-position: 50% 30%;
+}
+
+.projectCard:hover .projectImage {
+  scale: 1.2;
+  object-position: 50% 0%;
+}
+
+.projectIcons {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
