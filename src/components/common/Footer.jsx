@@ -28,7 +28,7 @@ const Footer = () => {
             </section>
             <hr className="text-white" />
             <section className="text-light text-center">
-                <p>&copy; Todos los derechos reservados</p>
+                <p>© Copyright 2023 - Made by Nicolas Powell</p>
             </section>
         </footer>
     );
