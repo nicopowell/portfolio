@@ -17,11 +17,13 @@ const Projects = () => {
       className="d-flex flex-column text-center py-5 container"
     >
       <h2 className="title fs-1 ">Projects</h2>
-      <p className="lead mt-4 mb-5">Here you will find some of my projects</p>
+      <p className="lead mt-4 mb-5">
+        Here you will find some of my personal and team projects.
+      </p>
       <div className="d-flex text-start">
-        <div className="card mb-3 w-100">
+        <div className="card mb-3 w-100 projectCard">
           <div className="row g-0">
-            <div className="col-md-5">
+            <div className="col-md-5 overflow-hidden">
               <a href="https://rolling-bites.netlify.app/" target="blank">
                 <img
                   src={RollingBites}
@@ -33,7 +35,9 @@ const Projects = () => {
             <div className="col-md-7 container">
               <div className="card-body d-flex flex-column justify-content-between h-100">
                 <div>
-                  <h5 className="title">RollingBites</h5>
+                  <a href="https://rolling-bites.netlify.app/" target="blank">
+                    <h5 className="title">RollingBites</h5>
+                  </a>
                   <p className="card-text">
                     Rolling Bites is a website which allows a restaurant to
                     create, edit and delete their products, and the customer to
