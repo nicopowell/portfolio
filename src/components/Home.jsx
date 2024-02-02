@@ -1,9 +1,10 @@
-import { Container } from "react-bootstrap";
+import "./Home.css"
+import Nico from "../assets/Nico-Powell.avif"
 
 const Home = () => {
     return (
-        <section>
-            
+        <section className="d-flex justify-content-center py-5">
+            <img src={Nico} alt="Nico Powell" id="nicoImage"/>
         </section>
     );
 };

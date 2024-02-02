@@ -1,0 +1,5 @@
+#nicoImage{
+    max-width: 350px;
+    border-radius: 50%;
+    filter: drop-shadow(2px 3px 7px);
+}
