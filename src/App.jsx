@@ -5,6 +5,7 @@ import Header from "./components/common/Header";
 import Home from "./components/Home";
 import Footer from "./components/common/Footer";
 import { Container } from "react-bootstrap";
+import About from "./components/About";
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
             <Header></Header>
             <Container className="mainSection">
                 <Home></Home>
+                <About></About>
             </Container>
             <Footer></Footer>
         </>
