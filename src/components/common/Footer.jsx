@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <footer className="container-fluid pt-3">
             <section className="d-flex flex-column flex-sm-row justify-content-sm-between align-items-center">
-                <aside className="ps-sm-5">
+                <aside className="ps-sm-5 mb-4 mb-sm-0">
                     <a href={"/"} className="d-flex align-items-center ">
                         <img src={logoFooter} id="logoFooter" alt="logoFooter"></img>
                         <span className="fw-semibold fs-4 ms-2">Nico Powell</span>
