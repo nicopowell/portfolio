@@ -1,6 +1,15 @@
 import "./Projects.css";
 import RollingBites from "../assets/rolling-bites.avif";
 
+import htmlIcon from "../assets/HTML.avif";
+import cssIcon from "../assets/CSS.avif";
+import jsIcon from "../assets/JS.avif";
+import reactIcon from "../assets/React.avif";
+import mongoIcon from "../assets/MongoDB.avif";
+import expressIcon from "../assets/ExpressJS.avif";
+import nodeIcon from "../assets/NodeJS.avif";
+import gitIcon from "../assets/Git.avif";
+
 const Projects = () => {
   return (
     <section
@@ -13,25 +22,54 @@ const Projects = () => {
         <div className="card mb-3 w-100">
           <div className="row g-0">
             <div className="col-md-5">
-              <img
-                src={RollingBites}
-                className="img-fluid rounded-start projectImage"
-                alt="Rolling Bites Screenshot"
-              />
+              <a href="https://rolling-bites.netlify.app/" target="blank">
+                <img
+                  src={RollingBites}
+                  className="img-fluid rounded-start projectImage"
+                  alt="Rolling Bites Screenshot"
+                />
+              </a>
             </div>
             <div className="col-md-7 container">
-              <div className="card-body">
-                <h5 className="title">RollingBites</h5>
-                <p className="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-                <p className="card-text">
-                  <small className="text-body-secondary">
-                    Last updated 3 mins ago
-                  </small>
-                </p>
+              <div className="card-body d-flex flex-column justify-content-between h-100">
+                <div>
+                  <h5 className="title">RollingBites</h5>
+                  <p className="card-text">
+                    Rolling Bites is a website which allows a restaurant to
+                    create, edit and delete their products, and the customer to
+                    register, add them to the cart and place their orders
+                  </p>
+                </div>
+                <div className="py-3 d-flex gap-3 flex-wrap">
+                  <img
+                    src={htmlIcon}
+                    alt="HTML Icon"
+                    className="projectIcons"
+                  />
+                  <img src={cssIcon} alt="CSS Icon" className="projectIcons" />
+                  <img src={jsIcon} alt="HTML Icon" className="projectIcons" />
+                  <img
+                    src={reactIcon}
+                    alt="HTML Icon"
+                    className="projectIcons"
+                  />
+                  <img
+                    src={mongoIcon}
+                    alt="HTML Icon"
+                    className="projectIcons"
+                  />
+                  <img
+                    src={expressIcon}
+                    alt="HTML Icon"
+                    className="projectIcons"
+                  />
+                  <img
+                    src={nodeIcon}
+                    alt="HTML Icon"
+                    className="projectIcons"
+                  />
+                  <img src={gitIcon} alt="HTML Icon" className="projectIcons" />
+                </div>
               </div>
             </div>
           </div>
