@@ -1,0 +1,18 @@
+#nicoImage{
+    max-width: 300px;
+    border-radius: 50%;
+    filter: drop-shadow(2px 3px 7px);
+}
+
+#name{
+    color: #9920F9;
+}
+
+#homeInfo{
+    max-width: 650px;
+    text-align: center;
+}
+
+.mediaLogoHome{
+    height: 65px;
+}

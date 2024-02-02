@@ -8,7 +8,7 @@ const Header = () => {
             <Container fluid>
                 <Navbar.Brand href="#home" className="fw-bold fs-3 d-flex align-items-center">
                     <img
-                        alt=""
+                        alt="Nico Powell Logo"
                         src={logo}
                         width="70"
                         height="70"
