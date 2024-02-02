@@ -7,7 +7,7 @@ const Header = () => {
     <Navbar sticky="top" expand="lg" className="bg-body-tertiary">
       <Container fluid>
         <Navbar.Brand
-          href="#home"
+          href="#top"
           className="fw-bold fs-3 d-flex align-items-center"
         >
           <img
@@ -22,7 +22,7 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto fs-5 gap-3">
-            <Nav.Link href=".">Home</Nav.Link>
+            <Nav.Link href="#top">Home</Nav.Link>
             <Nav.Link href="#about">About</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>
             <Nav.Link href="#contact">Contact</Nav.Link>
