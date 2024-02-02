@@ -14,11 +14,12 @@
   width: 100%;
   object-fit: cover;
   transition: 0.7s;
+  object-position: 50% 30%;
 }
 
 .projectCard:hover .projectImage {
   scale: 1.2;
-  object-position: 50% 30%;
+  object-position: 50% 0%;
 }
 
 .projectIcons {
