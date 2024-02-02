@@ -7,18 +7,21 @@ import mongoIcon from "../assets/MongoDB.avif";
 import expressIcon from "../assets/ExpressJS.avif";
 import nodeIcon from "../assets/NodeJS.avif";
 import gitIcon from "../assets/Git.avif";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 const About = () => {
+    const renderTooltip = (text) => <Tooltip>{text}</Tooltip>;
+
     return (
         <section id="about" className=" d-flex flex-column text-center mt-5 py-5">
             <h2 className="title fs-1 ">About me</h2>
-            <p className="lead mt-4">
+            <p className="lead mt-4 mb-5">
                 Here you will find more information about me, what I do, and my current skills
                 mostly in terms of programming and technology
             </p>
-            <div className="row mt-4 text-start">
+            <div className="row mt-5 text-start">
                 <aside className="col-12 col-lg-6 pe-lg-5">
-                    <h3 className="title mb-3">A little bit about me</h3>
+                    <h3 className="title mb-4">A little bit about me</h3>
                     <p className="lead">
                         Passionate full-stack developer specialized in crafting efficient and
                         visually appealing web solutions.
@@ -33,19 +36,43 @@ const About = () => {
                     </p>
                 </aside>
                 <aside className="col-12 col-lg-6 ps-lg-5">
-                    <h3 className="title mb-3">My Skills</h3>
-                    <div className="d-flex gap-4 pb-3 flex-wrap justify-content-center justify-content-lg-start">
+                    <h3 className="title mb-4">My Skills</h3>
+                    <div className="d-flex gap-4 pb-3 flex-column justify-content-center justify-content-lg-start">
                         <div className="d-flex gap-4">
-                            <img src={htmlIcon} alt="" className="aboutIcons" />
-                            <img src={cssIcon} alt="" className="aboutIcons" />
-                            <img src={jsIcon} alt="" className="aboutIcons" />
-                            <img src={reactIcon} alt="" className="aboutIcons" />
+                            <OverlayTrigger placement="bottom" overlay={renderTooltip("HTML")}>
+                                <img src={htmlIcon} alt="HTML Icon" className="aboutIcons" />
+                            </OverlayTrigger>
+                            <OverlayTrigger placement="bottom" overlay={renderTooltip("CSS")}>
+                                <img src={cssIcon} alt="CSS Icon" className="aboutIcons" />
+                            </OverlayTrigger>
+                            <OverlayTrigger placement="bottom" overlay={renderTooltip("JavaScript")}>
+                                <img src={jsIcon} alt="JS Icon" className="aboutIcons" />
+                            </OverlayTrigger>
+                            <OverlayTrigger placement="bottom" overlay={renderTooltip("React")}>
+                                <img src={reactIcon} alt="React Icon" className="aboutIcons" />
+                            </OverlayTrigger>
                         </div>
-                        <div  className="d-flex gap-4">
-                            <img src={mongoIcon} alt="" className="aboutIcons" />
-                            <img src={expressIcon} alt="" className="aboutIcons" />
-                            <img src={nodeIcon} alt="" className="aboutIcons" />
-                            <img src={gitIcon} alt="" className="aboutIcons" />
+                        <div className="d-flex gap-4">
+                            <OverlayTrigger
+                                placement="bottom"
+                                overlay={renderTooltip("MongoDB")}
+                            ><img src={mongoIcon} alt="MongoDB Icon" className="aboutIcons" /></OverlayTrigger>
+                            <OverlayTrigger
+                                placement="bottom"
+                                overlay={renderTooltip("ExpressJS")}
+                            ><img src={expressIcon} alt="ExpressJS Icon" className="aboutIcons" /></OverlayTrigger>
+                            <OverlayTrigger
+                                placement="bottom"
+                                overlay={renderTooltip("NodeJS")}
+                            ><img src={nodeIcon} alt="NodeJS Icon" className="aboutIcons" /></OverlayTrigger>
+                            <OverlayTrigger
+                                placement="bottom"
+                                overlay={renderTooltip("Git")}
+                            ><img src={gitIcon} alt="Git Icon" className="aboutIcons" /></OverlayTrigger>
+                            
+                            
+                            
+                            
                         </div>
                     </div>
                 </aside>
