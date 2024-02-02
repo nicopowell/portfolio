@@ -6,5 +6,6 @@
 }
 
 .aboutIcons:hover{
-    scale: 1.2;
+    scale: 1.1;
+    filter: drop-shadow(0 0 7px #9720f9d3);
 }
