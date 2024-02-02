@@ -15,7 +15,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className=" d-flex flex-column text-center mt-5 py-5 container"
+      className=" d-flex flex-column text-center py-5 container"
     >
       <h2 className="title fs-1 ">About me</h2>
       <p className="lead mt-4 mb-5">
