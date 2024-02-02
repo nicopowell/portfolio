@@ -1,10 +1,42 @@
-import "./Home.css"
-import Nico from "../assets/Nico-Powell.avif"
+import "./Home.css";
+import Nico from "../assets/Nico-Powell.avif";
+import Github from "../assets/Github-Dark-Icon.avif";
+import Linkedin from "../assets/Linkedin-Icon.avif";
+import Instagram from "../assets/Instagram-Icon.avif";
 
 const Home = () => {
     return (
-        <section className="d-flex justify-content-center py-5">
-            <img src={Nico} alt="Nico Powell" id="nicoImage"/>
+        <section className="d-flex flex-column align-items-center py-5">
+            <img src={Nico} alt="Nico Powell" id="nicoImage" />
+            <h2 className="pt-4 fs-1">Hello! My name is</h2>
+            <h1 id="name">Nicolas Powell</h1>
+            <p className="lead mt-4" id="homeInfo">
+                A Fullstack developer who builds your website from design concept to functional
+                reality, driven by their knowledge and experience.
+            </p>
+            <div>
+                <a
+                    href={"https://github.com/nicopowell"}
+                    target="blank"
+                    className="d-flex align-items-center"
+                >
+                    <img src={Github} className="mediaLogoFooter" alt="Github logo"></img>
+                </a>
+                <a
+                    href={"https://www.linkedin.com/in/nicolas-powell-938a47249/"}
+                    target="blank"
+                    className="d-flex align-items-center"
+                >
+                    <img src={Linkedin} className="mediaLogoFooter" alt="Linkedin Logo"></img>
+                </a>
+                <a
+                    href={"https://www.instagram.com/nicopowell30/"}
+                    target="blank"
+                    className="d-flex align-items-center"
+                >
+                    <img src={Instagram} className="mediaLogoFooter" alt="Instagram Logo"></img>
+                </a>
+            </div>
         </section>
     );
 };
