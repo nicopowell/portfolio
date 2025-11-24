@@ -1,20 +1,10 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { inter } from "@/config/fonts";
 import "./globals.css";
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"]
-})
-
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Nicolas Powell | Estudiante de Ingeniería en Informática",
-  description: "Portfolio de Estudiante de Ingeniería en Informática",
+  description: "Portfolio de Estudiante de Ingeniería en Informática.",
 };
 
 export default function RootLayout({
@@ -25,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${inter.variable} ${jetbrainsMono.variable} antialiased bg-slate-950 text-slate-200`}
+        className={`${inter.className} antialiased bg-slate-950 text-slate-200`}
       >
         {children}
       </body>
