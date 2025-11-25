@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/Badge";
+import { Button } from "@/components/ui/Button";
 
 export default function Home() {
 	return (
@@ -8,6 +9,8 @@ export default function Home() {
 				<p className="text-sm text-cyan-400">console.log("Hola Mundo, soy Geist Mono");</p>
 			</div>
 			<Badge>Disponible para proyectos</Badge>
+      <Button>Ver Proyectos</Button>
+      <Button variant="outline">Contactar</Button>
 		</main>
 	);
 }
