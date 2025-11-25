@@ -1,16 +1,9 @@
-import { Badge } from "@/components/ui/Badge";
-import { Button } from "@/components/ui/Button";
+import { Hero } from "@/components/sections/Hero";
 
 export default function Home() {
-	return (
-		<main className="flex min-h-screen flex-col items-center justify-center gap-6">
-			<h1 className="text-4xl font-bold">Portfolio en desarrollo 🚀</h1>
-			<div className={`font-mono bg-slate-900 p-4 rounded-lg border border-slate-800`}>
-				<p className="text-sm text-cyan-400">console.log("Hola Mundo, soy Geist Mono");</p>
-			</div>
-			<Badge>Disponible para proyectos</Badge>
-      <Button>Ver Proyectos</Button>
-      <Button variant="outline">Contactar</Button>
-		</main>
-	);
+  return (
+    <main className="min-h-screen bg-slate-950">
+      <Hero />
+    </main>
+  );
 }
