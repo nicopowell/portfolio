@@ -24,8 +24,8 @@ export const Hero = () => {
         </p>
 
         <div className="flex gap-4 pt-4">
-          <Button>Ver Proyectos</Button>
-          <Button variant="outline"><Mail className="size-5 mr-4"/>Contactar</Button>
+          <Button href="#proyectos">Ver Proyectos</Button>
+          <Button variant="outline" href="mailto:nicopowell30@gmail.com" ><Mail className="size-5 mr-4"/>Contactar</Button>
         </div>
       </div>
     </section>
